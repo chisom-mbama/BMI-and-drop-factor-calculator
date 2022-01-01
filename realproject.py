@@ -10,10 +10,10 @@ print ("Welcome",name)
 print ("")
 
 def action():
-    red= input ("Do you want to exit? \n(e)Yes \n(f)No\n")
-    if (red == "f"):
+    exit= input ("Do you want to exit? \n(e)Yes \n(f)No\n")
+    if (exit == "f"):
         qestio()
-    elif (red == "e"):
+    elif (exit == "e"):
         print ("Thank You for using my app")
         exit()
     else:
