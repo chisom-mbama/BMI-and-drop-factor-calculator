@@ -1,4 +1,5 @@
-'''A PYTHON PROGRAM FOR NURSES TO CALCULATE BMI AND DROP FACTOR'''
+#Declaring constant variables globally
+
 Blooddropfactor = 15
 Fluiddropfactor = 20
 print ("Welcome")
