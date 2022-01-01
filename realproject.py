@@ -29,9 +29,9 @@ def qestio():
         HT=float(input('input height in metres\n'))
 
         #calculate BMI using inputed variables and standard formula
-        BMI=WT/(HT**2)
-        Y = round (BMI,1)
-        print ("Your BMI is", Y,"kg/m2")
+        BMI=round(WT/(HT**2))
+        
+        print ("Your BMI is", BMI,"kg/m2")
         return action()
     else:
         (reason == "b")
