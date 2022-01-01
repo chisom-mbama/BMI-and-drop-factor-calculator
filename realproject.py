@@ -1,7 +1,7 @@
 #Declaring constant variables globally
-
 Blooddropfactor = 15
 Fluiddropfactor = 20
+
 print ("Welcome")
 print ("")
 
@@ -9,7 +9,7 @@ name = input ("Please input your name\n")
 print ("Welcome",name)
 print ("")
 
-def Redo():
+def action():
     red= input ("Do you want to exit? \n(e)Yes \n(f)No\n")
     if (red == "f"):
         qestio()
@@ -18,7 +18,7 @@ def Redo():
         exit()
     else:
         print ("please,select an option")
-        return Redo()
+        return action()
 def qestio():
     reason = input("What do you want to calculate \n(a)BMI or \n(b)Drop factor\n")
     if (reason == "a"):
@@ -27,7 +27,7 @@ def qestio():
         BMI=WT/(HT**2)
         Y = round (BMI,1)
         print ("Your BMI is", Y,"kg/m2")
-        return Redo()
+        return action()
     else:
         (reason == "b")
         Vol=int(input('Input Volume of fluid\n'))
@@ -37,13 +37,13 @@ def qestio():
         Dropfactor=(Vol*Blooddropfactor)/(Time*60)
         X = round(Dropfactor,1)
         print ("Drop Factor is" , X,"drops per minute")
-        return Redo()
+        return action()
     else:
         (Fluidtype == "d")
         Dropfactor=(Vol*Fluiddropfactor)/(Time*60) 
         X = round (Dropfactor,1)
         print ("Drop Factor is" , X,"drops per minuite")
-        return Redo()
+        return action()
 print (qestio())
 
     
