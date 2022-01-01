@@ -5,7 +5,7 @@ March 2019
 BMI and drop factor calculator
 
 # Description
-DROP FACTOR
+DROP FACTOR -
 In medical practice, when fluids are put up, the drops of fluid that goes into the body per minuite is usually calculated based on type of fluid and the amount of time the fluid should be up.
 
 The drop factor calculator takes in the Fluid volume, fluid type and duration and it returns the drop factor in minuites.
