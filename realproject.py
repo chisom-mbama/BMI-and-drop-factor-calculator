@@ -35,13 +35,20 @@ def qestio():
 
         #Redirect user to action function
         return action()
+
     else:
         (reason == "b")
+
+        #Collect needed inputs from user
         Vol=int(input('Input Volume of fluid\n'))
         Time=int(input('Input Time in hours\n'))
 
+    #Determine fluid type
     Fluidtype=input ("(c)Blood or \n(d)Fluid\n")
+
     if (Fluidtype == "c"):
+
+        #calculate drop factor using inputed variables and standard formula
         Dropfactor=(Vol*Blooddropfactor)/(Time*60)
         X = round(Dropfactor,1)
         print ("Drop Factor is" , X,"drops per minute")
