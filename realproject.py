@@ -52,14 +52,21 @@ def qestio():
         Dropfactor=round((Vol*Blooddropfactor)/(Time*60), 1)
 
         print ("Drop Factor is" , Dropfactor,"drops per minute")
-        
+
+        #Redirect user to action function
         return action()
+
     else:
         (Fluidtype == "d")
-        Dropfactor=(Vol*Fluiddropfactor)/(Time*60) 
-        X = round (Dropfactor,1)
-        print ("Drop Factor is" , X,"drops per minuite")
+
+        #calculate drop factor using inputed variables and standard formula
+        Dropfactor=round((Vol*Fluiddropfactor)/(Time*60), 1) 
+    
+        print ("Drop Factor is" , Dropfactor,"drops per minuite")
+
+         #Redirect user to action function
         return action()
+        
 print (qestio())
 
     
