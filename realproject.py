@@ -32,6 +32,8 @@ def qestio():
         BMI=round(WT/(HT**2))
         
         print ("Your BMI is", BMI,"kg/m2")
+
+        #Redirect user to action function
         return action()
     else:
         (reason == "b")
