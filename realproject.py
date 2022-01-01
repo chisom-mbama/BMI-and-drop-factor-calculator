@@ -29,7 +29,7 @@ def qestio():
         HT=float(input('input height in metres\n'))
 
         #calculate BMI using inputed variables and standard formula
-        BMI=round(WT/(HT**2))
+        BMI=round(WT/(HT**2),1)
         
         print ("Your BMI is", BMI,"kg/m2")
 
@@ -49,9 +49,10 @@ def qestio():
     if (Fluidtype == "c"):
 
         #calculate drop factor using inputed variables and standard formula
-        Dropfactor=(Vol*Blooddropfactor)/(Time*60)
-        X = round(Dropfactor,1)
-        print ("Drop Factor is" , X,"drops per minute")
+        Dropfactor=round((Vol*Blooddropfactor)/(Time*60), 1)
+
+        print ("Drop Factor is" , Dropfactor,"drops per minute")
+        
         return action()
     else:
         (Fluidtype == "d")
