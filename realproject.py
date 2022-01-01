@@ -19,11 +19,16 @@ def action():
     else:
         print ("please,select an option")
         return action()
+
 def qestio():
     reason = input("What do you want to calculate \n(a)BMI or \n(b)Drop factor\n")
     if (reason == "a"):
+
+        #Input needed variables
         WT=float(input('input weight in Kg\n'))
         HT=float(input('input height in metres\n'))
+
+        #calculate BMI using inputed variables and standard formula
         BMI=WT/(HT**2)
         Y = round (BMI,1)
         print ("Your BMI is", Y,"kg/m2")
@@ -32,6 +37,7 @@ def qestio():
         (reason == "b")
         Vol=int(input('Input Volume of fluid\n'))
         Time=int(input('Input Time in hours\n'))
+
     Fluidtype=input ("(c)Blood or \n(d)Fluid\n")
     if (Fluidtype == "c"):
         Dropfactor=(Vol*Blooddropfactor)/(Time*60)
